@@ -1,0 +1,30 @@
+Pre-requisites:
+
+a. VSCode
+b. Python
+c. In VSCode, SQLite extensions
+
+Steps:
+
+1. [OPTIONAL] Create a virtual environment
+    - `python -m venv venv`
+    - `.\venv\Scripts\Activate.ps1`
+
+2. Requirements installation
+    - Create requirements.txt and write all necessary packages in it
+    - `pip install -r requirements.txt`
+
+3. Create files
+    - database.py => Create, initialize, and connect to database
+    - models.py => Create the design of objects that backend will accept
+    - routers/orders.py => APIs for ordering
+    - main.py => This file becomes live first, when the backend becomes live
+
+4. Code
+    - Create first API "POST /place_order"
+    - Create a function for it
+    - Create initialization and router connection in main.py
+
+5. Run server
+    - `uvicorn main:app --reload`
+    - http://127.0.0.1:8000 or http://localhost:8000
